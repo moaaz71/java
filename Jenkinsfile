@@ -1,10 +1,9 @@
 pipeline {
   agent any
   stages {
-    stage('git') {
-      agent any
+    stage('scm') {
       steps {
-        git 'https://github.com/moaaz71/moaaz.git'
+        echo 'hello'
       }
     }
 
